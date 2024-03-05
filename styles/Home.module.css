@@ -1,26 +1,57 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  max-width: 1200px;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 8px 32px 0 rgba(83, 89, 179, 0.37);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border-radius: 30px;
+.main {
+  background: #001745;
+  border-radius: 20px;
+  box-shadow: 25px 25px 40px 0px rgba(0, 0, 0, 0.33);
+  height: 400px;
+  max-height: 90vh;
+  min-width: 98%;
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.weather-panel {
+  color: #fff;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 950px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    max-width: 600px;
-    margin: 20px auto;
-  }
+small {
+  font-size: 20px !important;
 }
 
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    margin: 0;
-    border-radius: 0;
+.coming-days {
+  background: #197644;
+  border-radius: 5px;
+}
+
+.coming-days * {
+  color: white;
+}
+
+.coming-days small {
+  font-size: 17px !important;
+  color: white;
+}
+
+ul.forecast > li {
+  border-top: 1px solid #fff;
+}
+
+p {
+  margin: 0 !important;
+}
+
+#__next {
+  width: 100%;
+}
+
+.loading {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .coming-days small {
+    font-size: 15px !important;
   }
 }
